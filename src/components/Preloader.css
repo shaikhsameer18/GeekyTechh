@@ -1,0 +1,55 @@
+.preloader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.preloader-container.show {
+  opacity: 1;
+}
+
+.preloader-container.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.preloader-content {
+  text-align: center;
+  color: white;
+}
+
+.logo {
+  height: 150px;
+  margin-bottom: 6px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(to right, pink, blue);
+  -webkit-background-clip: text; /* Vendor prefix for WebKit browsers */
+  background-clip: text; /* Standard property */
+  color: transparent;
+  /* animation: titleAnimation 2s ease-in-out infinite; */
+}
+
+@keyframes titleAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
