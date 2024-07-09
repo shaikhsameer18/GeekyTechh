@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios"; // Import custom CSS file for styling
+import axios from "axios";
 
 export default function Widget() {
   const [name, setName] = useState("");
@@ -10,14 +10,12 @@ export default function Widget() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Replace 'YOUR_FORMSPREE_ENDPOINT' with your actual Formspree endpoint
-    const endpoint = "https://formspree.io/f/xvgponlb";
+    const endpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT;
 
     try {
       const response = await axios.post(endpoint, { name, email, message });
       if (response.status === 200) {
         setSubmitted(true);
-        // Optionally, reset the form fields
         setName("");
         setEmail("");
         setMessage("");
