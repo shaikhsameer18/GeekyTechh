@@ -1,7 +1,6 @@
 # Geeky Techh
 
 Geeky Techh is a versatile web development company specializing in website development, graphic designing, career guidance & counselling, IoT project development, UI/UX designing, and online business handling. This repository contains the source code for the Geeky Techh website built using React and CSS, and it's powered by Vite for a fast and optimized development experience.
-<<<<<<< HEAD
 
 ## Table of Contents
 
