@@ -26,7 +26,7 @@ export default function Widget() {
   };
 
   return (
-    <div className="background">
+    <div className="background" id="connect">
       <div className="overlay">
         <div className="contact-form-container">
           {!submitted ? (

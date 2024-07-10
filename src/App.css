@@ -843,6 +843,17 @@ textarea.form-control {
   -webkit-text-fill-color: transparent;
 }
 
+.team-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.team-linkedin {
+  margin-left: 10px;
+  color: #0077B5; /* LinkedIn blue color */
+  text-decoration: none;
+}
+
 .team-email {
   background: -webkit-linear-gradient(135deg, #9c95ce, #c64dbd, #5669ce, #cfcdd3);
   -webkit-background-clip: text;
